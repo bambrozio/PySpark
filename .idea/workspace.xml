@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2773c790-a52f-474d-94da-f272f8eb2df8" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="2773c790-a52f-474d-94da-f272f8eb2df8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataframeCode2.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/dataframe/programs/DataframeCode2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JsonToRdd.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/rdd/programs/JsonToRdd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RDDCode2.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/rdd/programs/RDDCode2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RddCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/rdd/programs/RddCode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/customer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataFramePySpark.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/dataframe/programs/dataFramePySpark.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/football.csv" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/football.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/people.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TestData/people.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randomDataGenerationDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/rdd/programs/randomDataGenerationDF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/statCrossTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/dataframe/programs/statCrossTable.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,23 +27,31 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1S99e9rEilBRvCIMnBn2ELXncl7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TestData" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PySpark\com" />
+      <recent name="E:\PySpark\com\dataframe\programs" />
+      <recent name="E:\PySpark\TestData" />
+      <recent name="E:\PySpark\com\com\rdd\programs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PySpark\TestData" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.DataframeCode2">
     <configuration name="DataframeCode2" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -47,7 +66,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataframeCode2.py" />
+      <option name="SCRIPT_NAME" value="E:\PySpark\com\dataframe\programs\DataframeCode2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -68,7 +87,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RDDCode2.py" />
+      <option name="SCRIPT_NAME" value="E:\PySpark\com\com\rdd\programs\RDDCode2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -89,7 +108,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataFramePySpark.py" />
+      <option name="SCRIPT_NAME" value="E:\PySpark\com\dataframe\programs\dataFramePySpark.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -110,7 +129,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/randomDataGenerationDF.py" />
+      <option name="SCRIPT_NAME" value="E:\PySpark\com\com\rdd\programs\randomDataGenerationDF.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,7 +150,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/statCrossTable.py" />
+      <option name="SCRIPT_NAME" value="E:\PySpark\com\dataframe\programs\statCrossTable.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,10 +169,35 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2773c790-a52f-474d-94da-f272f8eb2df8" name="Default Changelist" comment="" />
+      <created>1576396994627</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576396994627</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="390" y="125" width="586" height="478" key="find.popup" timestamp="1576397423699">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="125" width="586" height="478" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1576397423699" />
   </component>
 </project>
