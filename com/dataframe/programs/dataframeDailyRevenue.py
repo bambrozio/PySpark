@@ -1,8 +1,12 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import substring
+
+from pyspark.sql.functions import min
+from pyspark.sql.functions import max
+
 spark=SparkSession.builder.appName('dataframe practice').master('local').getOrCreate()
 
-orderItems=spark.read.format('CSV').schema('order_item_id int, order_item_order_id int, order_item_product_id int, order_item_quantity int, order_item_subtotal float ,order_item_product_price float').load('C:\\Users\\RAKA\\Desktop\\order_item.txt').show()
+orderItems=spark.read.format('CSV').schema('order_item_id int, order_item_order_id int, order_item_product_id int, order_item_quantity int, order_item_subtotal float ,order_item_product_price float').load('C:\\Users\\RAKA\\Desktop\\order_item.txt')
 
 #print(type(orderItems))
 
@@ -76,6 +80,10 @@ orders=spark.read.format('CSV').schema('order_id int , order_date string, order_
 
 
 #orderItems.select('order_item_subtotal','order_item_quantity','order_item_product_price').filter(orderItems.order_item_subtotal != round(orderItems.order_item_quantity * orderItems.order_item_product_price)).show()
+
+
+'''import MAX and MIN module to use the respcetive functions'''
+orders.select(max(orders.order_date).alias('maximum_order_date')).show()
 
 
 
