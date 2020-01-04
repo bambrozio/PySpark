@@ -2,7 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import substring
 spark=SparkSession.builder.appName('dataframe practice').master('local').getOrCreate()
 
-#orderItems=spark.read.format('CSV').schema('order_item_id int, order_item_order_id int, order_item_product_id int, order_item_quantity int, order_item_subtotal float ,order_item_product_price float').load('C:\\Users\\RAKA\\Desktop\\order_item.txt')
+orderItems=spark.read.format('CSV').schema('order_item_id int, order_item_order_id int, order_item_product_id int, order_item_quantity int, order_item_subtotal float ,order_item_product_price float').load('C:\\Users\\RAKA\\Desktop\\order_item.txt').show()
 
 #print(type(orderItems))
 
@@ -65,7 +65,19 @@ orders=spark.read.format('CSV').schema('order_id int , order_date string, order_
 #orders.filter((orders.order_status.isin('COMPLETE','CLOSED')).__and__(orders.order_date.like('2013-09%'))).show()
 
 #syntax with SQL style dataframe
-orders.filter('''order_status in  ('COMPLETE','CLOSED') and order_date like '2013-09%' ''').show()
+#orders.filter('''order_status in  ('COMPLETE','CLOSED') and order_date like '2013-09%' ''').show()
+
+
+#orderItems.show()
+
+#orderItems.select('order_item_id','order_item_order_id').show()
+
+#orderItems.select('order_item_subtotal','order_item_quantity','order_item_product_price').filter(orderItems.order_item_subtotal == orderItems.order_item_quantity * orderItems.order_item_product_price ).show()
+
+
+#orderItems.select('order_item_subtotal','order_item_quantity','order_item_product_price').filter(orderItems.order_item_subtotal != round(orderItems.order_item_quantity * orderItems.order_item_product_price)).show()
+
+
 
 
 
