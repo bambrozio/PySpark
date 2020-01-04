@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2773c790-a52f-474d-94da-f272f8eb2df8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TestData/categories_part1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestData/customers.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestData/department.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestData/order_item.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestData/orders.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestData/products.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/dataframe/programs/dataframeDailyRevenue.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/dataframe/programs/dataframeDailyRevenue.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/dataframe/programs/dataframeDailyRevenue.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,18 +47,6 @@
       <recent name="E:\PySpark\TestData" />
       <recent name="E:\PySpark\com\com\rdd\programs" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python.dataframeDailyRevenue">
     <configuration name="Airbnb_Dataframe" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -183,6 +164,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -212,10 +205,15 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="AirBnb DF" />
-    <option name="LAST_COMMIT_MESSAGE" value="AirBnb DF" />
+    <MESSAGE value="Daily revenue DF" />
+    <option name="LAST_COMMIT_MESSAGE" value="Daily revenue DF" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="390" y="125" width="586" height="478" key="find.popup" />
-    <state x="390" y="125" width="586" height="478" key="find.popup/0.0.1366.728@0.0.1366.728" />
+    <state x="350" y="0" key="CommitChangelistDialog2" timestamp="1578114095180">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="350" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578114095180" />
+    <state x="390" y="125" width="586" height="478" key="find.popup" timestamp="1578114089220" />
+    <state x="390" y="125" width="586" height="478" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1578114089221" />
   </component>
 </project>
