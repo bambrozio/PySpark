@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2773c790-a52f-474d-94da-f272f8eb2df8" name="Default Changelist" comment="Daily revenue DF">
+    <list default="true" id="2773c790-a52f-474d-94da-f272f8eb2df8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/dataframe/programs/dataframeDailyRevenue.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/dataframe/programs/dataframeDailyRevenue.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,31 +208,35 @@
     <option name="LAST_COMMIT_MESSAGE" value="Daily revenue DF" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="350" y="0" key="CommitChangelistDialog2" timestamp="1578114765025">
+    <state x="350" y="0" key="CommitChangelistDialog2" timestamp="1578394455350">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="350" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578114765025" />
-    <state width="1345" height="188" key="GridCell.Tab.0.bottom" timestamp="1578114758934">
+    <state x="350" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578394455350" />
+    <state width="1345" height="188" key="GridCell.Tab.0.bottom" timestamp="1578396263150">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="188" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578114758934" />
-    <state width="1345" height="188" key="GridCell.Tab.0.center" timestamp="1578114758933">
+    <state width="1345" height="188" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578396263150" />
+    <state width="1345" height="188" key="GridCell.Tab.0.center" timestamp="1578396263149">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="188" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578114758933" />
-    <state width="1345" height="188" key="GridCell.Tab.0.left" timestamp="1578114758933">
+    <state width="1345" height="188" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578396263149" />
+    <state width="1345" height="188" key="GridCell.Tab.0.left" timestamp="1578396263149">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="188" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578114758933" />
-    <state width="1345" height="188" key="GridCell.Tab.0.right" timestamp="1578114758934">
+    <state width="1345" height="188" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578396263149" />
+    <state width="1345" height="188" key="GridCell.Tab.0.right" timestamp="1578396263149">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="188" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578114758934" />
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1578114191173">
+    <state width="1345" height="188" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578396263149" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1578114807330">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1578114191173" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1578114807330" />
     <state x="390" y="125" width="586" height="478" key="find.popup" timestamp="1578114089220" />
     <state x="390" y="125" width="586" height="478" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1578114089221" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1578391715566">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1578391715566" />
   </component>
 </project>
