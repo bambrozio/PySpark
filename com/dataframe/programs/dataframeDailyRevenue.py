@@ -3,6 +3,7 @@ from pyspark.sql.functions import substring
 
 from pyspark.sql.functions import min
 from pyspark.sql.functions import max
+from pyspark.sql.functions import date_format
 
 spark=SparkSession.builder.appName('dataframe practice').master('local').getOrCreate()
 
@@ -83,11 +84,13 @@ orders=spark.read.format('CSV').schema('order_id int , order_date string, order_
 
 
 '''import MAX and MIN module to use the respcetive functions'''
-orders.select(max(orders.order_date).alias('maximum_order_date')).show()
+#orders.select(max(orders.order_date).alias('maximum_order_date')).show()
 
+'''Import date_format module to fetch info related to date, month and year from functions package of pyspark.sql'''
+#orders.select(date_format(orders.order_date,'yyyy')).show()
 
+#orders.select(date_format(orders.order_date,'MM')).show()
+#orders.filter(date_format(orders.order_date, 'MM') == '01').show()
 
-
-
-
+print(orders.filter((date_format(orders.order_date,'dd') == '01')).select('order_date').distinct().count())
 

@@ -15,6 +15,7 @@ df.show()
 
 print("only columns name will display",df.columns)
 
+
 print("count of the data file",df.count())
 
 
