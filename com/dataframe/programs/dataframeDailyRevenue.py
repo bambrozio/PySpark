@@ -4,6 +4,10 @@ from pyspark.sql.functions import substring
 from pyspark.sql.functions import min
 from pyspark.sql.functions import max
 from pyspark.sql.functions import date_format
+from pyspark.sql.functions import countDistinct
+from pyspark.sql.functions import sum
+from pyspark.sql.functions import count
+from pyspark.sql.functions import round
 
 spark=SparkSession.builder.appName('dataframe practice').master('local').getOrCreate()
 
@@ -19,7 +23,7 @@ orderItems=spark.read.format('CSV').schema('order_item_id int, order_item_order_
 
 #orderItems.select(orderItems.order_item_product_id, 'order_item_quantity').show()
 
-orders=spark.read.format('CSV').schema('order_id int , order_date string, order_customer_id int,order_status string').load('C:\\Users\\RAKA\\PycharmProjects\\PySparkPracticeCodes\\TestData\\orders.txt')
+orders=spark.read.format('CSV').option('inferSchema','true').schema('order_id int , order_date string, order_customer_id int,order_status string').load('C:\\Users\\RAKA\\PycharmProjects\\PySparkPracticeCodes\\TestData\\orders.txt')
 
 #orders.select('order_date').show(truncate= False)
 
@@ -92,5 +96,74 @@ orders=spark.read.format('CSV').schema('order_id int , order_date string, order_
 #orders.select(date_format(orders.order_date,'MM')).show()
 #orders.filter(date_format(orders.order_date, 'MM') == '01').show()
 
-print(orders.filter((date_format(orders.order_date,'dd') == '01')).select('order_date').distinct().count())
+#print(orders.filter((date_format(orders.order_date,'dd') == '01')).select('order_date').distinct().count())
 
+#orders.select('countDistinct(order_date)').show()
+
+#orders.select(countDistinct('order_date').alias('distinct_order_date_count')).show()
+
+#orders.show()
+
+#orders.groupBy('order_status').agg(count('order_Status').alias('count_status')).show()
+
+'''JOIN'''
+
+#ordersJoin=orders.join(orderItems, orders.order_id == orderItems.order_item_order_id)
+
+#ordersJoin.groupBy('order_date','order_item_product_id').agg(round(sum('order_item_subtotal'),2).alias('prduct_revenue')).show()
+
+
+'''OFF PRACTICE PURPOSE'''
+
+#orderItems.select('order_item_id').show(5)
+#orderItems.show(2)
+#orderItems.filter(orderItems.order_item_id == 1).show()
+'''for x in orderItems.select('order_date'):
+    print(x)'''
+
+#orderItems.select(orderItems.oder_date.isin())
+
+'''for x in orderItems.collect():
+    print(x)'''
+
+'''for x in orderItems.select(orderItems.order_item_id).show(5):
+    print("rakesh")
+'''
+
+mvv_list = orderItems.select('order_item_id').collect()
+
+print(type(mvv_list))
+
+for x in mvv_list:
+    print(x[0])
+    c=0
+    if x[0] == None:
+        print("not interger")
+        c=c+1
+        print("COUNT OF NON INTERGER is",c)
+    else:
+        print("INTERGER")
+
+print(orderItems.dtypes)
+
+dataTypeOfDF=orderItems.dtypes
+
+print(type(dataTypeOfDF))
+
+for x in dataTypeOfDF:
+    print(x[1])
+
+
+'''for x in mvv_list:
+     #print(type(x))
+     print(x)
+     print("ROW is a tuple",type(x[0]))
+     print(x[0])
+     '''
+#print(mvv_list[3])
+
+ #mvv_array = [int(row.order_item_id) for row in mvv_list.collect()]
+'''
+i=orderItems.rdd.toLocalIterator()
+
+print(i)'''
