@@ -1,67 +1,35 @@
-#print("rak")
+from pyspark import SparkContext
+print("Pyspark import succefully imported")
 
-# from pyspark import SparkContext
-# print("Pyspark import succefully imported")
-#
-# sc=SparkContext('local[2]', 'RddCode')
-# print("Spark Context object created")
+sc=SparkContext('local[2]','BasicExample')
+print("Spark Context object created")
 
-# from pyspark import SparkContext
-# print("Pyspark import succefully imported")
-#
-# from pyspark.sql import SparkSession
-# sparkSession = SparkSession.builder.appName("example").getOrCreate()
-# print("SparkSession object is created successfully")
+l=range(0,100)
 
-# from pyspark import SparkContext
-#
-# sc=SparkContext('local[2]', 'RddCode')
-#
-# l=[1,2,3,4]
-#
-# #RDD creation in below step
-# listrdd=sc.parallelize(l)
-#
-# print(listrdd)
-#
-# #COLLECT is an action performed on RDD to print on output
-# print(listrdd.collect())
+print("type of data entered:-",type(l))
 
-# from pyspark import SparkContext
-#
-# sc=SparkContext('local[2]','Rdd Mapp code')
-#
-# l=[100,200,300,400]
-#
-# l_rdd=sc.parallelize(l)
-#
-# l_output_rdd=l_rdd.map(lambda x : x+50).collect()
-#
-# print(l_output_rdd)
-#
+lRDD=sc.parallelize(l)
 
-# from pyspark import SparkContext
-#
-# sc=SparkContext('local[2]','Rdd filter CODE') #local means Spark run on locally and creating 2 cored in standalone cluster
-#
-# l=[10,20,30,40,50,60]
-#
-# l_rdd=sc.parallelize(l)
-#
-# l_output_rdd=l_rdd.filter(lambda x:x>20).collect()
-#
-# print(l_output_rdd)
+print(type(lRDD))
 
-# from pyspark import SparkContext
-# sc=SparkContext('local[2]','Rdd distinct code')
-# mylist=[1,2,3,3,4,5,4,6]
-# mylist_rdd=sc.parallelize(mylist)
-#
-# mylist_trans_rdd=mylist_rdd.distinct()
-#
-# mylist_action_rdd=mylist_trans_rdd.collect()
-#
-# print(mylist_action_rdd)
+#COLLECT is an action performed on RDD to print on output
+print(lRDD.collect())
+
+print(lRDD.first())
+
+#MAP: map is a lazy function
+lRDD_map=lRDD.map(lambda x: x+13)
+print(lRDD_map.collect())
+
+lRDD_map_2=lRDD.map(lambda y: y>=23)
+print(lRDD_map_2.collect())
+
+lRDD_map_3=lRDD.map(lambda z: z **10)
+print(lRDD_map_3.collect())
+
+#Distinct
+print("Distinct",lRDD.distinct().collect())
+
 
 # from pyspark import SparkContext
 # import pyspark.sql.dataframe
