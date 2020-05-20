@@ -31,28 +31,6 @@ print(lRDD_map_3.collect())
 print("Distinct",lRDD.distinct().collect())
 
 
-# from pyspark import SparkContext
-# import pyspark.sql.dataframe
-# from pyspark.sql import SparkSession
-# from pyspark.sql.types import *
-# # spark = SparkSession \
-# #        .builder \
-# #        .appName("RandomForest") \
-# #        .config("spark.executor.heartbeatInterval","60s")\
-# #        .getOrCreate()
-# spark = SparkSession.builder.master("local").appName("Word Count").config("spark.some.config.option", "some-value").getOrCreate()
-# sc = spark.sparkContext
-# lines = sc.textFile("people.txt")
-# parts = lines.map(lambda l: l.split(","))
-# people = parts.map(lambda p: Row(name=p[0],age=int(p[1])))
-# peopledf = spark.createDataFrame(people)
-# people = parts.map(lambda p: Row(name=p[0],age=int(p[1].strip())))
-# schemaString = "name age"
-# fields = [StructField(field_name, StringType(), True) for
-# field_name in schemaString.split()]
-# schema = StructType(fields)
-# spark.createDataFrame(people, schema).show()
-
 
 # df = spark.read.json("customer.json")
 # df.show()
