@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Feb 02 21:34:07 IST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0170-06a5-165e-000007e35e90 
+on database directory C:\Users\RAKA\PycharmProjects\PySparkPracticeCodes\com\dataframe\programs\metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@54faae07 
+Loaded from file:/C:/work/spark-2.3.1-bin-hadoop2.7/jars/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_172-b11
+user.dir=C:\Users\RAKA\PycharmProjects\PySparkPracticeCodes\com\dataframe\programs
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

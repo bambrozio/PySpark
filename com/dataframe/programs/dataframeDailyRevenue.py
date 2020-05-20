@@ -11,7 +11,7 @@ from pyspark.sql.functions import round
 
 spark=SparkSession.builder.appName('dataframe practice').master('local').getOrCreate()
 
-orderItems=spark.read.format('CSV').schema('order_item_id int, order_item_order_id int, order_item_product_id int, order_item_quantity int, order_item_subtotal float ,order_item_product_price float').load('C:\\Users\\RAKA\\Desktop\\order_item.txt')
+orderItems=spark.read.format('CSV').schema('order_item_id int, order_item_order_id int, order_item_product_id int, order_item_quantity int, order_item_subtotal float ,order_item_product_price float').load('C:\\work\\datasets\\order_item.txt')
 
 #print(type(orderItems))
 
@@ -23,7 +23,7 @@ orderItems=spark.read.format('CSV').schema('order_item_id int, order_item_order_
 
 #orderItems.select(orderItems.order_item_product_id, 'order_item_quantity').show()
 
-orders=spark.read.format('CSV').option('inferSchema','true').schema('order_id int , order_date string, order_customer_id int,order_status string').load('C:\\Users\\RAKA\\PycharmProjects\\PySparkPracticeCodes\\TestData\\orders.txt')
+#orders=spark.read.format('CSV').option('inferSchema','true').schema('order_id int , order_date string, order_customer_id int,order_status string').load('C:\\Users\\RAKA\\PycharmProjects\\PySparkPracticeCodes\\TestData\\orders.txt')
 
 #orders.select('order_date').show(truncate= False)
 
@@ -129,7 +129,7 @@ orders=spark.read.format('CSV').option('inferSchema','true').schema('order_id in
 '''for x in orderItems.select(orderItems.order_item_id).show(5):
     print("rakesh")
 '''
-
+'''
 mvv_list = orderItems.select('order_item_id').collect()
 
 print(type(mvv_list))
@@ -152,7 +152,7 @@ print(type(dataTypeOfDF))
 
 for x in dataTypeOfDF:
     print(x[1])
-
+'''
 
 '''for x in mvv_list:
      #print(type(x))
